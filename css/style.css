@@ -1,0 +1,179 @@
+body {
+    min-width: 290px;
+    color: #b6bccf;
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:"header"
+                        "nav"
+                        "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 5% 1fr 4%;
+    gap: 1px;
+    min-width: 700px;
+    
+  }
+  
+  
+header #header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: initial;
+    grid-area: header;
+    position: fixed;
+    margin-top: 5%;   
+    margin-left: 2%;
+    border-color: rgba(26, 25, 25, 0.4);      
+    padding: 2px;          
+    color: #101113;    
+    border-top: 5px solid; 
+    border-color: rgba(26, 25, 25, 0.4);
+    
+    
+
+}  
+
+header #header header {
+    font-size: 30px;
+    margin-top: 2%;
+    border-bottom: 5px solid;
+    border-color: rgba(26, 25, 25, 0.4);
+    
+    
+}
+    
+  
+  #navbar {
+    grid-area: nav;  
+    position: fixed;
+    min-width: 325px;
+    margin-top: 5%;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    margin-left: 2.2%;    
+    border-right: 5px solid; 
+    border-left: 5px solid;  
+    border-color: rgba(26, 25, 25, 0.4);
+    
+  }
+  
+  #navbar header {
+      margin-top: 10%;
+      font-size: 35px;
+      text-align: center;       
+      text-decoration: none;
+      color:rgb(32, 31, 31);
+     
+      
+  }
+  
+  
+  #navbar ul {
+      padding: 10px;       
+      border-color: rgba(7, 6, 6, 0.4);
+      margin-top: 25%
+      
+     
+  }
+
+
+  #navbar #nav ul {
+      margin-right: 0%;
+  }
+  
+  #navbar li {
+      margin-top: 10%;
+      align-items: center;
+      font-size: 26px;    
+      list-style: none;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;    
+      border-left: 1px solid;          
+      width: 80%;
+      background-color: rgb(236, 225, 225);
+          
+  }
+    
+  
+  
+  
+  .nav-link {
+      color:rgb(32, 31, 31);
+      text-decoration: none;
+  }
+  
+  .nav-link:hover {
+      background-color: rgb(179, 197, 197);
+      color: rgb(19, 17, 16);
+  }
+  
+  
+  #main-doc {
+      grid-area: main;
+      position: relative;
+      margin-left: 400px;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+      color:rgb(32, 31, 31);
+      
+  }
+  
+  header {
+      font-size: 25px;
+  }
+  
+  #logica {
+      text-align: justify;
+      margin-top: 8%;
+      border-bottom: 5px solid;
+      border-color:  rgba(26, 25, 25, 0.4);
+      padding: 20px;
+      
+  }
+  
+  
+  #algoritmo {
+      text-align: justify;
+      margin-top: 8%;
+      border-bottom: 5px solid;
+      border-color:  rgba(26, 25, 25, 0.4);
+      padding: 20px;
+      
+      
+  }
+  
+  #algoritmo h3 {
+      margin-top: 6%;
+      
+  }
+  
+  
+  
+  
+  
+  #rutina {
+      text-align: justify;
+      margin-top: 8%;
+      border-bottom: 5px solid;
+      border-color:  rgba(26, 25, 25, 0.4);
+      padding: 20px;
+  }
+  
+  
+  
+  
+  #ejemplos {
+      text-align: justify;
+      margin-top: 8%;
+      margin-bottom: 12%;
+      border-bottom: 5px solid;
+      border-color:  rgba(26, 25, 25, 0.4);
+      padding: 20px;
+  
+  
+  }
+  
+  

@@ -1,192 +1,195 @@
-body {
-    min-width: 290px;
-    color: lightslategray;
-    background-color: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-areas:"header"
-                        "nav"
-                        "main";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 5% 1fr 4%;
-    gap: 1px;
-    min-width: 700px;
-    
-  }
-  
-  
-header #header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: initial;
-    grid-area: header;
-    position: fixed;
-    margin-top: 5%;   
-    margin-left: 2%;        
-    padding: 2px;          
-    color: #101113;    
-    border-top: 5px solid; 
-    border-color: rgba(26, 25, 25, 0.4);
-    
-    
-    
-
-}  
-
-header #header header {
-    font-size: 30px;
-    margin-top: 2%;
-    border-bottom: 5px solid;
-    border-color: rgba(26, 25, 25, 0.4);
-    
-    
-    
-    
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
 }
-    
-  
-  #navbar {
-    grid-area: nav;  
-    position: fixed;
-    min-width: 325px;
-    margin-top: 5%;
-    left: 0px;
-    width: 0;
-    height: 100%;
-    margin-left: 2.2%;    
-    border-right: 5px solid; 
-    border-left: 5px solid;  
-    border-color: rgba(26, 25, 25, 0.4);
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: rgb(51, 60, 70);
+    font-size: 16px;
+}
+
+/* #navbar {
+    background-color: rgb(245, 238, 238);
+    min-width: 300px;
+    top: 10px;
+    width: 300px;
+    height: 92%;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 10px;
+
+
+} */
+
+.nav {
+    width: 100%;
+
+
+}
+
+
+
+#navbar header {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 30%;
+    border: 2px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 100%;
+
+
+
+
+}
+
+#navbar ul {
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 40%;
+
+
+
+}
+
+#navbar ul>li {
+
+    list-style: none;
+    margin-top: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125rem;
+    border: 2px solid;
     border-radius: 2%;
-    
-  }
-  
-  #navbar header {
-      margin-top: 10%;
-      font-size: 35px;
-      text-align: center;       
-      text-decoration: none;
-      color:rgb(32, 31, 31);
-     
-      
-  }
-  
-  
-  #navbar ul {
-      padding: 10px;       
-      border-color: rgba(7, 6, 6, 0.4);
-      margin-top: 25%
-      
-     
-  }
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+
+}
+
+ul>li .nav-link {
+    color: rgb(51, 60, 70);
+    text-decoration: transparent;
+}
+
+ul>li .nav-link:hover {
+    background-color: rgb(169, 173, 173);
+    color: rgb(19, 17, 16);
+}
+
+/* #main-doc  {
+    background-color: rgb(245, 238, 238);   
+    font-size: 1.125rem;    
+    text-align: justify;    
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;    
+    border-left: 2px solid;
+    border-radius: 1%;
+    margin-left: 8%;
+    margin-right: 3%;
+} */
+
+#main-doc .main-section #logica {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border: 2px solid;
+    border-radius: 2%;
+}
+
+#main-doc .main-section #algoritmo {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border: 2px solid;
+    border-radius: 2%;
+}
+
+#main-doc .main-section article h3 {
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+}
+
+#main-doc .main-section article ul {
+
+    margin-left: 25px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#main-doc .main-section #rutina {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border: 2px solid;
+    border-radius: 2%;
+}
+
+#main-doc .main-section #ejemplos {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+}
+
+#main-doc .main-section article ol {
+    margin-left: 25px;
+}
+
+/*Cuando el tamaño es mayor a 815px en pantalla */
+@media (min-width: 815px) {
+    #navbar {
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        border-radius: 1%;
+        margin-left: 1px;
 
 
-  #navbar #nav ul {
-      margin-right: 0%;
-  }
-  
-  #navbar li {
-      margin-top: 10%;
-      align-items: center;
-      font-size: 26px;    
-      list-style: none;
-      border-top: 1px solid;
-      border-right: 1px solid;
-      border-bottom: 1px solid;    
-      border-left: 1px solid;          
-      width: 80%;
-      background-color: rgb(236, 225, 225);
-          
-  }
-    
-  
-  
-  
-  .nav-link {
-      color:rgb(32, 31, 31);
-      text-decoration: none;
-  }
-  
-  .nav-link:hover {
-      background-color: rgb(179, 197, 197);
-      color: rgb(19, 17, 16);
-  }
-  
-  
-  #main-doc {
-      grid-area: main;
-      position: relative;
-      margin-left: 400px;
-      margin-right: 50px;
-      display: flex;
-      flex-direction: column;
-      color:rgb(32, 31, 31);
-      
-  }
-  
-  header {
-      font-size: 25px;
-  }
-  
-  #logica {
-      text-align: justify;
-      margin-top: 8%;
-      border-top: 5px solid;
-      border-right: 5px solid;  
-      border-bottom: 5px solid;
-      border-left: 5px solid;
-      border-color:  rgba(26, 25, 25, 0.4);
-      padding: 20px;
-      
-  }
-  
-  
-  #algoritmo {
-      text-align: justify;
-      margin-top: 8%;
-      border-top: 5px solid;
-      border-right: 5px solid;  
-      border-bottom: 5px solid;
-      border-left: 5px solid;      
-      border-color:  rgba(26, 25, 25, 0.4);
-      padding: 20px;
-      
-      
-  }
-  
-  #algoritmo h3 {
-      margin-top: 6%;
-      
-  }
-  
- 
-  
-  #rutina {
-      text-align: justify;
-      margin-top: 8%;
-      border-top: 5px solid;
-      border-right: 5px solid;  
-      border-bottom: 5px solid;
-      border-left: 5px solid;
-      border-color:  rgba(26, 25, 25, 0.4);
-      padding: 20px;
-  }
-  
-  
-  
-  
-  #ejemplos {
-      text-align: justify;
-      margin-top: 8%;
-      margin-bottom: 12%;
-      border-top: 5px solid;
-      border-right: 5px solid;  
-      border-bottom: 5px solid;
-      border-left: 5px solid;
-      border-color:  rgba(26, 25, 25, 0.4);
-      padding: 20px;
-  
-  
-  }
-  
-  
+
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 320px;
+        background-color: rgb(245, 238, 238);
+        font-size: 1.125rem;
+        text-align: justify;
+        border: 2px solid;
+        border-radius: 1%;
+        margin-left: 25%;
+        margin-right: 3%;
+    }
+}
+
+/*cuando el tamaño es menor a 815px en pantalla */
+@media (max-width:816px) {
+
+    #navbar {
+        height: 100%;
+        width: 100%;
+        border-right: 2px solid;
+        border-radius: 1%;
+    }
+
+    #main-doc {
+        background-color: rgb(245, 238, 238);
+        font-size: 1.125rem;
+        text-align: justify;
+        margin-left: 8%;
+        margin-right: 3%;
+    }
+}
